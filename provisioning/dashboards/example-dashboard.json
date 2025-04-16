@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "uid": "example",
+    "title": "Example Dashboard",
+    "timezone": "browser",
+    "schemaVersion": 16,
+    "version": 1,
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Prometheus Target Availability",
+        "id": 1,
+        "datasource": "Prometheus",
+        "targets": [
+          {
+            "expr": "up",
+            "legendFormat": "{{instance}}",
+            "interval": ""
+          }
+        ],
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 24,
+          "h": 8
+        }
+      }
+    ],
+    "templating": {
+      "list": []
+    },
+    "annotations": {
+      "list": []
+    },
+    "refresh": "5s",
+    "time": {
+      "from": "now-5m",
+      "to": "now"
+    }
+  }
